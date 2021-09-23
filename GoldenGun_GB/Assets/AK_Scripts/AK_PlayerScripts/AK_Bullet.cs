@@ -6,22 +6,27 @@ public class AK_Bullet : MonoBehaviour
 {
     public float bulletSpeed;
 
-    Rigidbody2D bulletRB;
+    Transform bulletTransform;
 
 
     private void Start()
     {
-        bulletRB = gameObject.GetComponent<Rigidbody2D>();
+        bulletTransform = gameObject.GetComponent<Transform>();
 
-        bulletRB.velocity = new Vector2(bulletSpeed, 0f);
     }
 
-
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void Update()
     {
-        if(collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
+        bulletTransform.position += Vector3.right * bulletSpeed * Time.deltaTime;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
         {
             Destroy(gameObject);
         }
     }
+
+
 }
