@@ -5,12 +5,17 @@ using UnityEngine;
 public class AK_PlayerMovement : MonoBehaviour
 {
     Rigidbody2D playerRB;
-    
 
+    [HideInInspector]
+    public float horizontalMovement;
+
+    AK_PlayerShooting playerShoot;
+    
+    // Player Stats
     public float playerSpeed;
     public float jumpForce;
-
-    float horizontalMovement;
+    
+    public bool isLookingRight;
 
     public bool isGrounded;
 
@@ -22,7 +27,9 @@ public class AK_PlayerMovement : MonoBehaviour
     void Start()
     {
         playerRB = gameObject.GetComponent<Rigidbody2D>();
+        playerShoot = gameObject.GetComponent<AK_PlayerShooting>();
         groundLayerInt = groundLayer.value;
+        isLookingRight = true;
     }
     void Update()
     {
@@ -31,12 +38,17 @@ public class AK_PlayerMovement : MonoBehaviour
 
         horizontalMovement = Input.GetAxisRaw("Horizontal") * playerSpeed;
 
-        //isGrounded = groundCheck.isGrounded;
+        LookDirection();
         
 
         if (Input.GetButtonDown("Jump") && isGrounded == true)
         {
             PlayerJump();
+        }
+
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            playerShoot.PlayerShoot(isLookingRight);
         }
 
         MovePlayer(horizontalMovement);
@@ -54,6 +66,17 @@ public class AK_PlayerMovement : MonoBehaviour
         playerRB.velocity = new Vector2(playerRB.velocity.x, jumpForce);
     }
 
+    void LookDirection()
+    {
+        if(horizontalMovement > 0)
+        {
+            isLookingRight = true;
+        }
+        else if(horizontalMovement < 0)
+        {
+            isLookingRight = false;
+        }
+    }
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(groundCheck.position, 0.45f);
