@@ -74,6 +74,8 @@ GameObject:
   - component: {fileID: 3334129626076412539}
   - component: {fileID: 3334129626076412538}
   - component: {fileID: 3334129626076412422}
+  - component: {fileID: 6583235478542096504}
+  - component: {fileID: 8431772545357568000}
   m_Layer: 0
   m_Name: TurretEnemy
   m_TagString: Untagged
@@ -234,3 +236,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6583235478542096504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3334129626076412541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88ecb59ab23721e4eba38401c243d4a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHP: 1
+--- !u!114 &8431772545357568000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3334129626076412541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbbf5f1773171f446a1e36b2981b6ced, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tombstone: {fileID: 1737253288261920708, guid: 5ffb64384f5828b4e83d123f198668a6,
+    type: 3}
+  deathAnimObj: {fileID: 1737253288261920708, guid: 5ffb64384f5828b4e83d123f198668a6,
+    type: 3}

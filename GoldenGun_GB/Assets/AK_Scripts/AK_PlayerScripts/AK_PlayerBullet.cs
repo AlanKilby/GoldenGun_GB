@@ -8,6 +8,15 @@ public class AK_PlayerBullet : MonoBehaviour
     {
         if(collision.gameObject.layer == LayerMask.NameToLayer("Enemy"))
         {
+            AK_EnemyHealth enemyHP = collision.gameObject.GetComponent<AK_EnemyHealth>();
+
+            enemyHP.LoseHP();
+
+            AK_PlayerShooting playerShooting = GameObject.FindGameObjectWithTag("Player").GetComponent<AK_PlayerShooting>();
+
+            if (playerShooting.ammoCounter < playerShooting.maxAmmo)
+                playerShooting.ammoCounter += 1;
+
             Destroy(gameObject);
         }
     }

@@ -176,6 +176,8 @@ GameObject:
   - component: {fileID: 1474497259160950007}
   - component: {fileID: 1474497259160950006}
   - component: {fileID: 1474497259160950001}
+  - component: {fileID: 1115264098348734073}
+  - component: {fileID: 8040024682642397337}
   m_Layer: 10
   m_Name: Vulture
   m_TagString: Untagged
@@ -253,3 +255,32 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &1115264098348734073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1474497259160950002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbbf5f1773171f446a1e36b2981b6ced, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tombstone: {fileID: 1737253288261920708, guid: 5ffb64384f5828b4e83d123f198668a6,
+    type: 3}
+  deathAnimObj: {fileID: 1737253288261920708, guid: 5ffb64384f5828b4e83d123f198668a6,
+    type: 3}
+--- !u!114 &8040024682642397337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1474497259160950002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88ecb59ab23721e4eba38401c243d4a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHP: 1
