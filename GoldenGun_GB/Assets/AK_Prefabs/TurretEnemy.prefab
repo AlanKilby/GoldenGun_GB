@@ -209,7 +209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1b1e61417ff20a42ba8c704f5e72fcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBetweenShots: 1
+  timeBetweenShots: 2.5
   isShootingRight: 0
   enemyBulletRight: {fileID: 4655643725210444591, guid: d47ceca67bf13a344a4111aae83318b4,
     type: 3}

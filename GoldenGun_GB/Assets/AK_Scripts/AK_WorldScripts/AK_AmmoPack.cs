@@ -7,14 +7,15 @@ public class AK_AmmoPack : MonoBehaviour
     public int ammoQuantity;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.layer == LayerMask.NameToLayer("Player"))
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
             AK_PlayerShooting playerShooting = collision.gameObject.GetComponent<AK_PlayerShooting>();
 
-            if(playerShooting.ammoCounter < playerShooting.maxAmmo)
-            playerShooting.ammoCounter += ammoQuantity;
-            Destroy(gameObject);
-
+            if (playerShooting.ammoCounter < playerShooting.maxAmmo)
+            {
+                playerShooting.ammoCounter += ammoQuantity;
+                Destroy(gameObject);
+            }
         }
     }
 }
