@@ -1,0 +1,446 @@
+fileFormatVersion: 2
+guid: 3e9db4c01e588b949883ca773e122eaf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6464621327213531736
+    second: pick_up_shield_spritesheet_0
+  - first:
+      213: -2083541344015128022
+    second: pick_up_shield_spritesheet_1
+  - first:
+      213: -2892866952176954499
+    second: pick_up_shield_spritesheet_2
+  - first:
+      213: 1965382691929931290
+    second: pick_up_shield_spritesheet_3
+  - first:
+      213: -3376316335616546812
+    second: pick_up_shield_spritesheet_4
+  - first:
+      213: 8925189658815080411
+    second: pick_up_shield_spritesheet_5
+  - first:
+      213: 3630910503434427514
+    second: pick_up_shield_spritesheet_6
+  - first:
+      213: 4823113743231081498
+    second: pick_up_shield_spritesheet_7
+  - first:
+      213: -4273624475311262491
+    second: pick_up_shield_spritesheet_8
+  - first:
+      213: -1270990803505359647
+    second: pick_up_shield_spritesheet_9
+  - first:
+      213: 7397331036109267341
+    second: pick_up_shield_spritesheet_10
+  - first:
+      213: 1923628657941805781
+    second: pick_up_shield_spritesheet_11
+  - first:
+      213: -7676566563844433384
+    second: pick_up_shield_spritesheet_12
+  - first:
+      213: -7118348552228491807
+    second: pick_up_shield_spritesheet_13
+  - first:
+      213: -7714390490537147733
+    second: pick_up_shield_spritesheet_14
+  - first:
+      213: 6663693867414076889
+    second: pick_up_shield_spritesheet_15
+  - first:
+      213: -8648528166598791605
+    second: pick_up_shield_spritesheet_16
+  - first:
+      213: -6599623394730347913
+    second: pick_up_shield_spritesheet_17
+  - first:
+      213: 4750101765196827252
+    second: pick_up_shield_spritesheet_18
+  - first:
+      213: 5793433114885773985
+    second: pick_up_shield_spritesheet_19
+  - first:
+      213: 7546800929677400864
+    second: pick_up_shield_spritesheet_20
+  - first:
+      213: -1270322046933861177
+    second: pick_up_shield_spritesheet_21
+  - first:
+      213: 2929640181388505445
+    second: pick_up_shield_spritesheet_22
+  - first:
+      213: -9185140035952130294
+    second: pick_up_shield_spritesheet_23
+  - first:
+      213: 1222684222265459552
+    second: pick_up_shield_spritesheet_24
+  - first:
+      213: 6199527425591413916
+    second: pick_up_shield_spritesheet_25
+  - first:
+      213: 2980843374436920405
+    second: pick_up_shield_spritesheet_26
+  - first:
+      213: -5658413701690928895
+    second: pick_up_shield_spritesheet_27
+  - first:
+      213: 7051886870362738209
+    second: pick_up_shield_spritesheet_28
+  - first:
+      213: -6699039669582950380
+    second: pick_up_shield_spritesheet_29
+  - first:
+      213: -7770727094648506442
+    second: pick_up_shield_spritesheet_30
+  - first:
+      213: -5313285674316081150
+    second: pick_up_shield_spritesheet_31
+  - first:
+      213: -8103589061323418609
+    second: pick_up_shield_spritesheet_32
+  - first:
+      213: 1820694555974366842
+    second: pick_up_shield_spritesheet_33
+  - first:
+      213: 3631674773583884639
+    second: pick_up_shield_spritesheet_34
+  - first:
+      213: -582179683102641281
+    second: pick_up_shield_spritesheet_35
+  - first:
+      213: 5988555265951610313
+    second: pick_up_shield_spritesheet_36
+  - first:
+      213: -5969485467068603673
+    second: pick_up_shield_spritesheet_37
+  - first:
+      213: 4806352312741569282
+    second: pick_up_shield_spritesheet_38
+  - first:
+      213: -8721439807373297449
+    second: pick_up_shield_spritesheet_39
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 8
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pick_up_shield_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8521af798d2f6b950800000000000000
+      internalID: 6464621327213531736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pick_up_shield_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2a632bcf26c513e0800000000000000
+      internalID: -2083541344015128022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pick_up_shield_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d73960585d87ad7d0800000000000000
+      internalID: -2892866952176954499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pick_up_shield_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1e3f203521764b10800000000000000
+      internalID: 1965382691929931290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pick_up_shield_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4082a366e2ae421d0800000000000000
+      internalID: -3376316335616546812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pick_up_shield_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd7a9aef4b4acdb70800000000000000
+      internalID: 8925189658815080411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pick_up_shield_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7c91709dd5936230800000000000000
+      internalID: 3630910503434427514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pick_up_shield_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1cd79045642fe240800000000000000
+      internalID: 4823113743231081498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pick_up_shield_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e438adae2901b4c0800000000000000
+      internalID: -4273624475311262491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pick_up_shield_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e4564429988c5ee0800000000000000
+      internalID: -1270990803505359647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

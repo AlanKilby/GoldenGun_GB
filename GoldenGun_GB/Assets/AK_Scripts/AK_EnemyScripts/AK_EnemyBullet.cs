@@ -8,6 +8,10 @@ public class AK_EnemyBullet : MonoBehaviour
     {
         if(collision.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
+            AK_PlayerHealth playerHealth = collision.gameObject.GetComponent<AK_PlayerHealth>();
+
+            playerHealth.LoseHP();
+
             Destroy(gameObject);
         }
     }
