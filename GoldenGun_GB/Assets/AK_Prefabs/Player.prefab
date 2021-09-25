@@ -180,15 +180,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1deb6988cdf90064a939e901db0c573e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerRB: {fileID: 0}
   horizontalMovement: 0
   playerSpeed: 5
-  jumpForce: 15
+  jumpForce: 10
   isLookingRight: 0
   isGrounded: 0
   groundCheck: {fileID: 6288125070996751772}
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
+  canMove: 0
 --- !u!114 &6288125070803058143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -252,6 +254,7 @@ MonoBehaviour:
     type: 3}
   playAgain: {fileID: 5311577204425455068, guid: a8c2d40816512bf428c1a3adf8d81b2a,
     type: 3}
+  isDead: 0
 --- !u!1 &6288125070996751773
 GameObject:
   m_ObjectHideFlags: 0

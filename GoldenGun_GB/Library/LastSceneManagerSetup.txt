@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/AK_Scenes/MainMenu.unity
+- path: Assets/AK_Scenes/BossFightScene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
