@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class AK_GruntZoneLimit : MonoBehaviour
 {
-    public GameObject gruntGO;
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        AK_GruntMovement gruntMovement = gruntGO.GetComponent<AK_GruntMovement>();
-        gruntMovement.TurnBack();
+        if(collision.gameObject.layer == LayerMask.NameToLayer("Enemy"))
+        {
+            AK_GruntMovement gruntMovement = collision.gameObject.GetComponent<AK_GruntMovement>();
+            gruntMovement.TurnBack();
+        }
     }
 }

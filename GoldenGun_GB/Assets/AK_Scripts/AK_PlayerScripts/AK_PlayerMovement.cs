@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AK_PlayerMovement : MonoBehaviour
 {
-    Rigidbody2D playerRB;
+    public Rigidbody2D playerRB;
 
     [HideInInspector]
     public float horizontalMovement;
@@ -24,12 +24,15 @@ public class AK_PlayerMovement : MonoBehaviour
     public LayerMask groundLayer;
     int groundLayerInt;
 
+    public bool canMove;
+
     void Start()
     {
         playerRB = gameObject.GetComponent<Rigidbody2D>();
         playerShoot = gameObject.GetComponent<AK_PlayerShooting>();
         groundLayerInt = groundLayer.value;
         isLookingRight = true;
+        canMove = true;
     }
     void Update()
     {
@@ -41,17 +44,18 @@ public class AK_PlayerMovement : MonoBehaviour
         LookDirection();
         
 
-        if (Input.GetButtonDown("Jump") && isGrounded == true)
+        if (Input.GetButtonDown("Jump") && isGrounded == true && canMove)
         {
             PlayerJump();
         }
 
-        if (Input.GetKeyDown(KeyCode.O))
+        if (Input.GetKeyDown(KeyCode.O) && canMove)
         {
             playerShoot.PlayerShoot(isLookingRight);
         }
 
-        MovePlayer(horizontalMovement);
+        if(canMove)
+            MovePlayer(horizontalMovement);
         
     }
 

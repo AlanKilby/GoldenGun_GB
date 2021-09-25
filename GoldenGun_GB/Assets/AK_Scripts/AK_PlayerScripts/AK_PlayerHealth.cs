@@ -9,6 +9,20 @@ public class AK_PlayerHealth : MonoBehaviour
 
     public int maxHP;
 
+    AK_PlayerDeath playerDeath;
+
+    private void Start()
+    {
+        playerDeath = GetComponent<AK_PlayerDeath>();
+    }
+
+    private void Update()
+    {
+        if(playerHP <= 0 && !playerDeath.isDead)
+        {
+            playerDeath.PlayerDeath();  
+        }
+    }
 
     public void LoseHP()
     {

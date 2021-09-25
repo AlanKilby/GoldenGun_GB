@@ -22,7 +22,7 @@ public class AK_EnemyDeath : MonoBehaviour
 
     public void EnemyDeath()
     {
-        Instantiate(tombstone,transform.position, Quaternion.identity);
+        Instantiate(tombstone,new Vector2(transform.position.x, transform.position.y+1), Quaternion.identity);
         Instantiate(deathAnimObj,transform.position, Quaternion.identity);
         Destroy(gameObject);
     }

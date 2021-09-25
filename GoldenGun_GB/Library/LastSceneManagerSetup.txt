@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/AK_Scenes/WorkingSpace.unity
+- path: Assets/AK_Scenes/MainMenu.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

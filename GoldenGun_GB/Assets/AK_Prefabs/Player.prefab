@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 6288125070803058143}
   - component: {fileID: 6288125070803058142}
   - component: {fileID: 6288125070803058141}
+  - component: {fileID: 422053785746140854}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -136,7 +137,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0.031856537}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.3, y: 0.5}
+    pivot: {x: 0.3, y: 0.55}
     oldSize: {x: 2.5, y: 1.875}
     newSize: {x: 2, y: 2}
     adaptiveTilingThreshold: 0.5
@@ -235,6 +236,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHP: 1
   maxHP: 2
+--- !u!114 &422053785746140854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6288125070803058117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31e4691a1a9e22843b1701998aa6c9f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tombstone: {fileID: 6178652519878879437, guid: 6a5768e87aeae79428d3fe7bea054474,
+    type: 3}
+  playAgain: {fileID: 5311577204425455068, guid: a8c2d40816512bf428c1a3adf8d81b2a,
+    type: 3}
 --- !u!1 &6288125070996751773
 GameObject:
   m_ObjectHideFlags: 0
