@@ -5,6 +5,7 @@ using UnityEngine;
 public class AK_PlayerMovement : MonoBehaviour
 {
     public Rigidbody2D playerRB;
+    public AK_PlayerAnimations playerAnimations;
 
     [HideInInspector]
     public float horizontalMovement;
@@ -28,8 +29,8 @@ public class AK_PlayerMovement : MonoBehaviour
 
     void Start()
     {
-        playerRB = gameObject.GetComponent<Rigidbody2D>();
-        playerShoot = gameObject.GetComponent<AK_PlayerShooting>();
+        playerRB = GetComponent<Rigidbody2D>();
+        playerShoot = GetComponent<AK_PlayerShooting>();
         groundLayerInt = groundLayer.value;
         isLookingRight = true;
         canMove = true;
@@ -51,23 +52,40 @@ public class AK_PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.O) && canMove)
         {
-            playerShoot.PlayerShoot(isLookingRight);
+            if (playerShoot.ammoCounter != 0)
+                playerAnimations.ChangeAnimationState(playerAnimations.PLAYER_SHOOTING);
+
+            playerShoot.PlayerShoot(isLookingRight);     
         }
 
         if(canMove)
             MovePlayer(horizontalMovement);
+
+        if (!isGrounded)
+        {
+            playerAnimations.ChangeAnimationState(playerAnimations.PLAYER_FALLING);
+        }
         
+        if(isGrounded && horizontalMovement == 0)
+        {
+            playerAnimations.ChangeAnimationState(playerAnimations.PLAYER_IDLE);
+        }
     }
 
     void MovePlayer(float _horizontalMovement)
     {
         playerRB.velocity = new Vector2(_horizontalMovement, playerRB.velocity.y);
 
+        if(horizontalMovement != 0 && isGrounded)
+            playerAnimations.ChangeAnimationState(playerAnimations.PLAYER_MOVING);
+
     }
 
     void PlayerJump()
     {
         playerRB.velocity = new Vector2(playerRB.velocity.x, jumpForce);
+
+        playerAnimations.ChangeAnimationState(playerAnimations.PLAYER_JUMPING);
     }
 
     void LookDirection()

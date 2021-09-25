@@ -4,7 +4,19 @@ using UnityEngine;
 
 public class AK_PlayerAnimations : MonoBehaviour
 {
-    public SpriteRenderer playerSpriteRend;
+    // PLAYER ANIMATIONS
+
+    public string PLAYER_IDLE;
+    public string PLAYER_MOVING;
+    public string PLAYER_JUMPING;
+    public string PLAYER_FALLING;
+    public string PLAYER_SHOOTING;
+
+    Animator animator;
+
+    string currentState;
+
+    SpriteRenderer playerSpriteRend;
 
     AK_PlayerMovement playerMovement;
 
@@ -12,6 +24,7 @@ public class AK_PlayerAnimations : MonoBehaviour
     {
         playerSpriteRend = gameObject.GetComponent<SpriteRenderer>();
         playerMovement = gameObject.GetComponent<AK_PlayerMovement>();
+        animator = GetComponent<Animator>();
     }
 
 
@@ -25,5 +38,14 @@ public class AK_PlayerAnimations : MonoBehaviour
         {
             playerSpriteRend.flipX = false;
         }
+    }
+
+    public void ChangeAnimationState(string newState)
+    {
+        if (currentState == newState) return;
+
+        animator.Play(newState);
+
+        currentState = newState;
     }
 }

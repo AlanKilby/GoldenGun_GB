@@ -13,6 +13,9 @@ public class AK_SeekerEnemy : MonoBehaviour
 
     Rigidbody2D enemyRB;
 
+    public AK_SeekerAnimation seekerAnim;
+
+    public SpriteRenderer spriteRend;
 
     private void Start()
     {
@@ -23,6 +26,12 @@ public class AK_SeekerEnemy : MonoBehaviour
 
     private void Update()
     {
+
+        if (!homing)
+        {
+            seekerAnim.ChangeAnimationState(seekerAnim.SEEKER_IDLE);
+        }
+
         if(homing == true && homingTime > 0)
         {
             homingTime -= Time.deltaTime;
@@ -34,12 +43,19 @@ public class AK_SeekerEnemy : MonoBehaviour
             transform.rotation = Quaternion.Slerp(transform.rotation, rotateToTarget, Time.deltaTime * rotateSpeed);
 
             enemyRB.velocity = new Vector2(direction.x * speed, direction.y * speed);
-            
+
+            seekerAnim.ChangeAnimationState(seekerAnim.SEEKER_ATTACK);
+
+            if(direction.x > 0)
+            {
+                spriteRend.flipX = true;
+            }
+            else
+            {
+                spriteRend.flipX = false;
+            }
         }
-        else if(homing == true && homingTime <= 0)
-        {
-        }
-        
     }
 
+    
 }

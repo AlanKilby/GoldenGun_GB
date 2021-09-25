@@ -9,7 +9,6 @@ public class AK_GruntMovement : MonoBehaviour
     SpriteRenderer gruntSpriteRend;
     public float gruntMovementSpeed;
 
-
     private void Start()
     {
         gruntRB = GetComponent<Rigidbody2D>();
@@ -18,6 +17,7 @@ public class AK_GruntMovement : MonoBehaviour
 
     private void Update()
     {
+
         if (movesRight)
         {
             gruntRB.velocity = new Vector2(gruntMovementSpeed, gruntRB.velocity.y);

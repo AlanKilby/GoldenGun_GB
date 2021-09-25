@@ -48,6 +48,7 @@ GameObject:
   - component: {fileID: 188537648926264789}
   - component: {fileID: 188537648926264788}
   - component: {fileID: 188537648926264791}
+  - component: {fileID: 4752301743808523888}
   m_Layer: 10
   m_Name: Enemy
   m_TagString: Untagged
@@ -90,7 +91,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 6
+  m_Constraints: 4
 --- !u!61 &188537648926264784
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -115,7 +116,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2, y: 1.25}
+  m_Size: {x: 2, y: 1.24}
   m_EdgeRadius: 0
 --- !u!212 &188537648926264790
 SpriteRenderer:
@@ -155,7 +156,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 98c2445e294d44d4aab33b00d16a9829, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -210,6 +211,25 @@ MonoBehaviour:
     type: 3}
   deathAnimObj: {fileID: 8039244253907737363, guid: c7dbfc9e32746a44c9583f3f27583743,
     type: 3}
+--- !u!95 &4752301743808523888
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188537648926264786}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 339ed86ac61ce8d489b1923ad23a5b3e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &188537649389687192
 GameObject:
   m_ObjectHideFlags: 0

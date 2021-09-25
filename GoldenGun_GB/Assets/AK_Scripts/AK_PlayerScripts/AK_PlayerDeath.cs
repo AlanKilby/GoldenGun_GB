@@ -16,10 +16,13 @@ public class AK_PlayerDeath : MonoBehaviour
 
     SpriteRenderer playerSR;
 
+    Animator playerAnimator;
+
     private void Awake()
     {
         isDead = false;
         playerSR = GetComponent<SpriteRenderer>();
+        playerAnimator = GetComponent<Animator>();
     }
     private void Start()
     {
@@ -28,6 +31,7 @@ public class AK_PlayerDeath : MonoBehaviour
     public void PlayerDeath()
     {
         playerSR.sprite = null;
+        playerAnimator.enabled = false;
 
         Instantiate(tombstone, transform.position, Quaternion.identity);
         Instantiate(playAgain, transform.position, Quaternion.identity);
