@@ -34,7 +34,7 @@ public class AK_PlayerDeath : MonoBehaviour
         playerAnimator.enabled = false;
 
         Instantiate(tombstone, transform.position, Quaternion.identity);
-        Instantiate(playAgain, transform.position, Quaternion.identity);
+        playAgain.SetActive(true);
 
         playerMov.playerRB.bodyType = RigidbodyType2D.Static;
         playerMov.canMove = false;

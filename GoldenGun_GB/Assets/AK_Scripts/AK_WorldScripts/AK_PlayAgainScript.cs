@@ -16,9 +16,14 @@ public class AK_PlayAgainScript : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.O))
+        if (Input.GetButtonDown("Jump"))
         {
             SceneManager.LoadScene(activeScene.buildIndex);
+        }
+
+        if (Input.GetButtonDown("Shoot"))
+        {
+            SceneManager.LoadScene("MainMenu");
         }
     }
 

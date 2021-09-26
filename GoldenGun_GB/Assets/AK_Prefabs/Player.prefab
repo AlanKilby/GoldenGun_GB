@@ -184,7 +184,7 @@ MonoBehaviour:
   playerRB: {fileID: 0}
   playerAnimations: {fileID: 6288125070803058142}
   horizontalMovement: 0
-  playerSpeed: 5
+  playerSpeed: 6
   jumpForce: 14
   isLookingRight: 0
   isGrounded: 0

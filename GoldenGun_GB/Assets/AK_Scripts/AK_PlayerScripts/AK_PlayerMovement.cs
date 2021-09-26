@@ -37,7 +37,7 @@ public class AK_PlayerMovement : MonoBehaviour
     }
     void Update()
     {
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position,0.45f, groundLayerInt);
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position,0.6f, groundLayerInt);
         
 
         horizontalMovement = Input.GetAxisRaw("Horizontal") * playerSpeed;
@@ -50,7 +50,7 @@ public class AK_PlayerMovement : MonoBehaviour
             PlayerJump();
         }
 
-        if (Input.GetKeyDown(KeyCode.O) && canMove)
+        if (Input.GetButtonDown("Shoot") && canMove)
         {
             if (playerShoot.ammoCounter != 0)
                 playerAnimations.ChangeAnimationState(playerAnimations.PLAYER_SHOOTING);
@@ -101,6 +101,6 @@ public class AK_PlayerMovement : MonoBehaviour
     }
     private void OnDrawGizmos()
     {
-        Gizmos.DrawWireSphere(groundCheck.position, 0.45f);
+        Gizmos.DrawWireSphere(groundCheck.position, 0.6f);
     }
 }

@@ -9,8 +9,11 @@ public class AK_Shield : MonoBehaviour
         if(collision.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
             AK_PlayerHealth playerHealth = collision.GetComponent<AK_PlayerHealth>();
-            playerHealth.GainHP();
-            Destroy(gameObject);
+            if(playerHealth.playerHP < 2)
+            {
+                playerHealth.GainHP();
+                Destroy(gameObject);
+            }
         }
     }
 }

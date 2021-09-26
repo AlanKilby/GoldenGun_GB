@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53052b1592190a846aabe0ba03b734a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playScene: WorkingSpace
+  playScene: Level1
   creditsScene: CreditsScene
   mainMenu: MainMenu
 --- !u!4 &26346869
@@ -409,12 +409,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Camera
       objectReference: {fileID: 0}
-    - target: {fileID: 6860116744766654038, guid: ee89b4e1dd5b5b34797305a21e7e8703,
-        type: 3}
-      propertyPath: m_PixelSnapping
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6860116744431222316, guid: ee89b4e1dd5b5b34797305a21e7e8703, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ee89b4e1dd5b5b34797305a21e7e8703, type: 3}
 --- !u!20 &557724465 stripped
 Camera:
@@ -4581,10 +4577,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 8
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 160, y: 144}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3

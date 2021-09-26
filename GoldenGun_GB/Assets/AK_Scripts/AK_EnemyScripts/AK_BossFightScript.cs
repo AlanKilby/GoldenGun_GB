@@ -8,6 +8,8 @@ public class AK_BossFightScript : MonoBehaviour
 {
     public float maxTime;
 
+    public float shootingWindow;
+
     float shootMoment;
     float shootMoment2;
 
@@ -37,55 +39,67 @@ public class AK_BossFightScript : MonoBehaviour
     public GameObject playerBullet;
     public GameObject enemyBullet;
 
-
+    public AK_PlayerAnimations playerAnim;
+    public AK_PlayerAnimations bossAnim;
 
     private void Start()
     {
         //timesUpText.SetActive(false);
         
         timeLeft = maxTime;
-        shootMoment = Random.Range(1, maxTime - 1);
-        shootMoment2 = shootMoment - 0.5f;
+        shootMoment = Random.Range(1, maxTime - 2 );
+        shootMoment2 = shootMoment - shootingWindow;
         spriteRend = GetComponent<SpriteRenderer>();
+        canShoot = true;
         endScreen = false;
     }
 
     private void Update()
     {
+        if(timeLeft > 0)
+            timeLeft -= Time.deltaTime;
 
         if (timeLeft > shootMoment)
         {
-            timeLeft -= Time.deltaTime;
+            
             spriteRend.sprite = getReady;
-        }
-
-        if (timeLeft > shootMoment2 && timeLeft < shootMoment)
-        {
-            spriteRend.sprite = shoot;
-            if (Input.GetKeyDown(KeyCode.O) && canShoot)
-            {
-                Instantiate(playerBullet, playerShootingPoint.position, Quaternion.identity);
-                Victory();
-            }
-        }
-        if (timeLeft < shootMoment2)
-        {
-            spriteRend.sprite = null;
-            if (Input.GetKeyDown(KeyCode.O) && canShoot)
+            if (Input.GetButtonDown("Shoot") && canShoot)
             {
                 Instantiate(enemyBullet, enemyShootingPoint.position, Quaternion.identity);
+                bossAnim.ChangeAnimationState(bossAnim.PLAYER_SHOOTING);
+                timeLeft = 0;
                 Defeat();
             }
         }
 
+        if (timeLeft > shootMoment2 && timeLeft < shootMoment && canShoot)
+        {
+            spriteRend.sprite = shoot;
+            if (Input.GetButtonDown("Shoot") && canShoot)
+            {
+                Instantiate(playerBullet, playerShootingPoint.position, Quaternion.identity);
+                playerAnim.ChangeAnimationState(playerAnim.PLAYER_SHOOTING);
+                timeLeft = 0;
+                Victory();
+            }
+        }
+        if (timeLeft < shootMoment2 && canShoot)
+        {
+            spriteRend.sprite = null;
+            Instantiate(enemyBullet, enemyShootingPoint.position, Quaternion.identity);
+            bossAnim.ChangeAnimationState(bossAnim.PLAYER_SHOOTING);
+            timeLeft = 0;
+            Defeat();
+        }
+
         if (endScreen)
         {
-            if (Input.GetKeyDown(KeyCode.O))
+            if (Input.GetButtonDown("Jump"))
             {
                 SceneManager.LoadScene(levelScene);
             }
 
-            if (Input.GetKeyDown(KeyCode.P))
+            if (Input.GetButtonDown("Shoot"))
             {
                 SceneManager.LoadScene(mainMenu);
             }
@@ -95,17 +109,19 @@ public class AK_BossFightScript : MonoBehaviour
     void Victory()
     {
         canShoot = false;
-        StartCoroutine("VictoryCor");
+        StartCoroutine(VictoryCor());
     }
 
     void Defeat()
     {
         canShoot = false;
-        StartCoroutine("DefeatCor");
+        StartCoroutine(DefeatCor());
     }
 
     IEnumerator DefeatCor() 
     {
+        yield return new WaitForSeconds(0.35f);
+
         spriteRend.sprite = defeatScreen;
 
         yield return new WaitForSeconds(3f);
@@ -119,6 +135,8 @@ public class AK_BossFightScript : MonoBehaviour
 
     IEnumerator VictoryCor()
     {
+        yield return new WaitForSeconds(0.35f);
+
         spriteRend.sprite = victoryScreen;
 
         yield return new WaitForSeconds(3f);
