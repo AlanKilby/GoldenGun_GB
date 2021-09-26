@@ -17,6 +17,21 @@ TextureImporter:
   - first:
       213: -3703446902334841426
     second: buitre_idel_animation105x15_4
+  - first:
+      213: 5483580032827827660
+    second: buitre_idel_animation105x15_0
+  - first:
+      213: -1446938115676897997
+    second: buitre_idel_animation105x15_1
+  - first:
+      213: 6445755756328881656
+    second: buitre_idel_animation105x15_2
+  - first:
+      213: 1390704666700186887
+    second: buitre_idel_animation105x15_3
+  - first:
+      213: -3871856032015546114
+    second: buitre_idel_animation105x15_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -117,9 +132,9 @@ TextureImporter:
       name: buitre_idel_animation105x15_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 0
-        width: 21
+        width: 20
         height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -128,8 +143,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56b8df61130439d20800000000000000
-      internalID: 3284039132866513765
+      spriteID: cc5a0229cf6991c40800000000000000
+      internalID: 5483580032827827660
       vertices: []
       indices: 
       edges: []
@@ -138,9 +153,9 @@ TextureImporter:
       name: buitre_idel_animation105x15_1
       rect:
         serializedVersion: 2
-        x: 21
+        x: 22
         y: 0
-        width: 21
+        width: 20
         height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -149,8 +164,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89daf07f7c339be80800000000000000
-      internalID: -8162435915695805032
+      spriteID: 33dfa1333717bebe0800000000000000
+      internalID: -1446938115676897997
       vertices: []
       indices: 
       edges: []
@@ -159,9 +174,9 @@ TextureImporter:
       name: buitre_idel_animation105x15_2
       rect:
         serializedVersion: 2
-        x: 42
+        x: 43
         y: 0
-        width: 21
+        width: 20
         height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -170,8 +185,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04a7f73b8e4ca0850800000000000000
-      internalID: 6344099528827697728
+      spriteID: 8fd89e495bce37950800000000000000
+      internalID: 6445755756328881656
       vertices: []
       indices: 
       edges: []
@@ -180,9 +195,9 @@ TextureImporter:
       name: buitre_idel_animation105x15_3
       rect:
         serializedVersion: 2
-        x: 63
+        x: 64
         y: 0
-        width: 21
+        width: 20
         height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -191,8 +206,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7028a43b6b07471a0800000000000000
-      internalID: -6812696406310354425
+      spriteID: 705842ea686cc4310800000000000000
+      internalID: 1390704666700186887
       vertices: []
       indices: 
       edges: []
@@ -201,9 +216,9 @@ TextureImporter:
       name: buitre_idel_animation105x15_4
       rect:
         serializedVersion: 2
-        x: 84
+        x: 85
         y: 0
-        width: 21
+        width: 20
         height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -212,8 +227,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ead9fcdf9a6ba9cc0800000000000000
-      internalID: -3703446902334841426
+      spriteID: ef8824ee377644ac0800000000000000
+      internalID: -3871856032015546114
       vertices: []
       indices: 
       edges: []

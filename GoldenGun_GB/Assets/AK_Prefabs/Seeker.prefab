@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 3284039132866513765, guid: 56e762ecadc449644a02db2455a2fb97,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -129,7 +129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
-  SEEKER_IDLE: seeker_idle
+  SEEKER_IDLE: seeker_idle_2
   SEEKER_ATTACK: seeker_attack
 --- !u!1 &1474497259109943440
 GameObject:

@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/AK_Scenes/WorkingSpace.unity
     guid: dc106dc6bac6d2a4a87460400d68b4b2
+  - enabled: 1
+    path: Assets/AK_Scenes/BossFightScene.unity
+    guid: 6c2ab6efd5364cb4ba45d24580043aeb
   m_configObjects: {}
